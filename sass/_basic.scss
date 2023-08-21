@@ -1,9 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.ttf") format("ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 // color
 
@@ -19,7 +14,7 @@ $very-dark: #111417;
 
 // font
 
-$font-poppins: "Poppins";
+$font-poppins: "Poppins", sans-serif;
 
 // mixin
 
@@ -58,4 +53,5 @@ body,
   position: relative;
   @include sizing(100%, auto);
   overflow-x: hidden;
+  font-family: $font-poppins;
 }
