@@ -54,4 +54,14 @@ body,
   @include sizing(100%, auto);
   overflow-x: hidden;
   font-family: $font-poppins;
+  background-color: $light;
+  min-height: 100vh;
+}
+
+.blue-text {
+  color: $light-blue;
+}
+
+a {
+  text-decoration: none;
 }
