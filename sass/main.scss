@@ -117,6 +117,7 @@
           list-style-type: none;
           opacity: 0;
           transition: all 0.5s;
+          cursor: default;
           pointer-events: none;
 
           &::after {
@@ -212,3 +213,31 @@
   }
 }
 // end of main menu
+@media screen and (max-width: 900px) {
+  .contact-menu {
+    padding: 0 20px;
+  }
+
+  .search-input {
+    padding: 8px !important;
+    width: 100px !important;
+  }
+
+  .search-box {
+    span {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .logo {
+    font-size: 2rem !important;
+  }
+
+  .list-menu {
+    column-gap: 10px !important;
+
+    &-link {
+      font-size: 0.9rem;
+    }
+  }
+}
