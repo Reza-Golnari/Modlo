@@ -51,6 +51,13 @@ a {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 760px) {
+  .slider-box,
+  .slider-item,
+  .slider-img {
+    width: 400px !important;
+  }
+}
 @media screen and (max-width: 670px) {
   .contact-menu,
   .main-menu {
@@ -58,6 +65,14 @@ a {
   }
   .mobile-menu {
     display: flex;
+  }
+}
+@media screen and (max-width: 430px) {
+  .slider-box,
+  .slider-item,
+  .slider-img {
+    width: 300px !important;
+    height: 250px !important;
   }
 }
 @media screen and (max-width: 400px) {
