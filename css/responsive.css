@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: #ecf0f1;
+  min-height: 100vh;
+}
+
+.blue-text {
+  color: #1890ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-menu {
+    padding: 0 20px;
+  }
+  .search-input {
+    padding: 8px !important;
+    width: 100px !important;
+  }
+  .search-box span {
+    font-size: 1.2rem !important;
+  }
+  .logo {
+    font-size: 2rem !important;
+  }
+  .list-menu {
+    column-gap: 10px !important;
+  }
+  .list-menu-link {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .contact-menu,
+  .main-menu {
+    display: none;
+  }
+}

@@ -1,243 +1,243 @@
 @import "basic";
 
-// start of contact menu
-.contact-menu {
-  @include sizing(100%, 40px);
-  @include flex(row, center, space-between);
-  background-color: $dark;
-  color: $light;
-  padding: 0px 100px;
+// // start of contact menu
+// .contact-menu {
+//   @include sizing(100%, 40px);
+//   @include flex(row, center, space-between);
+//   background-color: $dark;
+//   color: $light;
+//   padding: 0px 100px;
 
-  .contact-box {
-    @include flex();
-    column-gap: 50px;
+//   .contact-box {
+//     @include flex();
+//     column-gap: 50px;
 
-    &-text {
-      @include flex();
-      column-gap: 5px;
-      opacity: 0.8;
-      cursor: pointer;
-      color: $light;
-      font-weight: 700;
-      font-size: 0.9rem;
-      transition: all 0.2s;
+//     &-text {
+//       @include flex();
+//       column-gap: 5px;
+//       opacity: 0.8;
+//       cursor: pointer;
+//       color: $light;
+//       font-weight: 700;
+//       font-size: 0.9rem;
+//       transition: all 0.2s;
 
-      &:hover {
-        opacity: 1;
-      }
-    }
+//       &:hover {
+//         opacity: 1;
+//       }
+//     }
 
-    &-email {
-      p {
-        margin-bottom: 2px;
-      }
-    }
+//     &-email {
+//       p {
+//         margin-bottom: 2px;
+//       }
+//     }
 
-    &-list {
-      @include flex(row, center, space-between);
-      list-style-type: none;
+//     &-list {
+//       @include flex(row, center, space-between);
+//       list-style-type: none;
 
-      &-item {
-        @include sizing(40px, 40px);
-      }
+//       &-item {
+//         @include sizing(40px, 40px);
+//       }
 
-      &-link {
-        @include sizing(100%, 100%);
-        @include flex();
+//       &-link {
+//         @include sizing(100%, 100%);
+//         @include flex();
 
-        color: $light;
-        opacity: 0.8;
-        transition: all 0.4s;
+//         color: $light;
+//         opacity: 0.8;
+//         transition: all 0.4s;
 
-        &:hover {
-          opacity: 1;
-          background-color: $light-blue;
-          color: $dark;
-        }
-      }
-    }
-  }
-}
-// end of contact menu
-// start of main menu
-.main-menu {
-  @include sizing(100%, 60px);
-  @include flex(row, center, space-between);
-  padding: 10px 20px;
-  box-shadow: 0 0 10px black;
+//         &:hover {
+//           opacity: 1;
+//           background-color: $light-blue;
+//           color: $dark;
+//         }
+//       }
+//     }
+//   }
+// }
+// // end of contact menu
+// // start of main menu
+// .main-menu {
+//   @include sizing(100%, 60px);
+//   @include flex(row, center, space-between);
+//   padding: 10px 20px;
+//   box-shadow: 0 0 10px black;
 
-  .logo {
-    font-size: 2.5rem;
-    color: $very-dark;
-    font-weight: 700;
-  }
+//   .logo {
+//     font-size: 2.5rem;
+//     color: $very-dark;
+//     font-weight: 700;
+//   }
 
-  .item-box {
-    @include flex();
-    flex-direction: row-reverse;
-  }
+//   .item-box {
+//     @include flex();
+//     flex-direction: row-reverse;
+//   }
 
-  .list-menu {
-    @include flex(row, center, space-between);
-    flex-direction: row-reverse;
-    column-gap: 20px;
-    margin-right: 10px;
+//   .list-menu {
+//     @include flex(row, center, space-between);
+//     flex-direction: row-reverse;
+//     column-gap: 20px;
+//     margin-right: 10px;
 
-    &-item {
-      position: relative;
-      @include flex();
-      list-style-type: none;
-      opacity: 0.8;
-      transition: opacity 0.4s;
-      cursor: pointer;
+//     &-item {
+//       position: relative;
+//       @include flex();
+//       list-style-type: none;
+//       opacity: 0.8;
+//       transition: opacity 0.4s;
+//       cursor: pointer;
 
-      &:nth-child(2) {
-        position: relative;
+//       &:nth-child(2) {
+//         position: relative;
 
-        &:hover {
-          .under-menu {
-            opacity: 1;
-            top: 40px;
-            pointer-events: all;
-          }
-        }
+//         &:hover {
+//           .under-menu {
+//             opacity: 1;
+//             top: 40px;
+//             pointer-events: all;
+//           }
+//         }
 
-        .under-menu {
-          position: absolute;
-          top: 100px;
-          left: 50%;
-          padding: 20px;
-          transform: translateX(-50%);
-          @include sizing(150px, 100px);
-          background-color: $white;
-          @include flex(column, flex-start, center);
-          row-gap: 15px;
-          box-shadow: 0 2px 15px rgba($very-dark, 0.5);
-          border-radius: 10px;
-          list-style-type: none;
-          opacity: 0;
-          transition: all 0.5s;
-          cursor: default;
-          pointer-events: none;
+//         .under-menu {
+//           position: absolute;
+//           top: 100px;
+//           left: 50%;
+//           padding: 20px;
+//           transform: translateX(-50%);
+//           @include sizing(150px, 100px);
+//           background-color: $white;
+//           @include flex(column, flex-start, center);
+//           row-gap: 15px;
+//           box-shadow: 0 2px 15px rgba($very-dark, 0.5);
+//           border-radius: 10px;
+//           list-style-type: none;
+//           opacity: 0;
+//           transition: all 0.5s;
+//           cursor: default;
+//           pointer-events: none;
 
-          &::after {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 45%;
-            transform: translateX(-50%);
-            @include sizing(20px, 20px);
-            background-color: $white;
-            transform: rotate(45deg);
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: 0;
-            width: 100%;
-            height: 20px;
-          }
+//           &::after {
+//             content: "";
+//             position: absolute;
+//             top: -10px;
+//             left: 45%;
+//             transform: translateX(-50%);
+//             @include sizing(20px, 20px);
+//             background-color: $white;
+//             transform: rotate(45deg);
+//           }
+//           &::before {
+//             content: "";
+//             position: absolute;
+//             top: -20px;
+//             left: 0;
+//             width: 100%;
+//             height: 20px;
+//           }
 
-          &-item {
-            width: 100%;
-            list-style-type: none;
-            &:first-child {
-              padding-bottom: 10px;
-              border-bottom: 1px solid rgba($very-dark, 0.5);
-            }
-          }
+//           &-item {
+//             width: 100%;
+//             list-style-type: none;
+//             &:first-child {
+//               padding-bottom: 10px;
+//               border-bottom: 1px solid rgba($very-dark, 0.5);
+//             }
+//           }
 
-          &-link {
-            color: $very-dark;
-            font-weight: 700;
-          }
-        }
-      }
+//           &-link {
+//             color: $very-dark;
+//             font-weight: 700;
+//           }
+//         }
+//       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        @include sizing(0%, 3px);
-        border-radius: 15px;
-        background-color: $light-blue;
-        transition: width 0.4s;
-      }
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         bottom: -5px;
+//         left: 0;
+//         @include sizing(0%, 3px);
+//         border-radius: 15px;
+//         background-color: $light-blue;
+//         transition: width 0.4s;
+//       }
 
-      &:last-child {
-        &::after {
-          background-color: $light-red;
-        }
+//       &:last-child {
+//         &::after {
+//           background-color: $light-red;
+//         }
 
-        a {
-          color: $light-red;
-        }
-      }
+//         a {
+//           color: $light-red;
+//         }
+//       }
 
-      &:hover {
-        opacity: 1;
-        &::after {
-          width: 100%;
-        }
-      }
-    }
+//       &:hover {
+//         opacity: 1;
+//         &::after {
+//           width: 100%;
+//         }
+//       }
+//     }
 
-    &-link {
-      color: $very-dark;
-      font-weight: 700;
-    }
-  }
+//     &-link {
+//       color: $very-dark;
+//       font-weight: 700;
+//     }
+//   }
 
-  .search-box {
-    @include flex();
-    column-gap: 8px;
-    margin-right: 30px;
+//   .search-box {
+//     @include flex();
+//     column-gap: 8px;
+//     margin-right: 30px;
 
-    .search-input {
-      width: 150px;
-      outline: none;
-      padding: 10px;
-      background-color: transparent;
-      border: 1px solid rgba($very-dark, 0.5);
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba($very-dark, 0.5);
-    }
+//     .search-input {
+//       width: 150px;
+//       outline: none;
+//       padding: 10px;
+//       background-color: transparent;
+//       border: 1px solid rgba($very-dark, 0.5);
+//       border-radius: 10px;
+//       box-shadow: 0 2px 10px rgba($very-dark, 0.5);
+//     }
 
-    span {
-      font-size: 1.4rem;
-      opacity: 0.9;
-      cursor: pointer;
-    }
-  }
-}
-// end of main menu
-@media screen and (max-width: 900px) {
-  .contact-menu {
-    padding: 0 20px;
-  }
+//     span {
+//       font-size: 1.4rem;
+//       opacity: 0.9;
+//       cursor: pointer;
+//     }
+//   }
+// }
+// // end of main menu
+// @media screen and (max-width: 900px) {
+//   .contact-menu {
+//     padding: 0 20px;
+//   }
 
-  .search-input {
-    padding: 8px !important;
-    width: 100px !important;
-  }
+//   .search-input {
+//     padding: 8px !important;
+//     width: 100px !important;
+//   }
 
-  .search-box {
-    span {
-      font-size: 1.2rem !important;
-    }
-  }
+//   .search-box {
+//     span {
+//       font-size: 1.2rem !important;
+//     }
+//   }
 
-  .logo {
-    font-size: 2rem !important;
-  }
+//   .logo {
+//     font-size: 2rem !important;
+//   }
 
-  .list-menu {
-    column-gap: 10px !important;
+//   .list-menu {
+//     column-gap: 10px !important;
 
-    &-link {
-      font-size: 0.9rem;
-    }
-  }
-}
+//     &-link {
+//       font-size: 0.9rem;
+//     }
+//   }
+// }

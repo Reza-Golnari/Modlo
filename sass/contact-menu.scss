@@ -1,0 +1,60 @@
+@import "basic";
+// start of contact menu
+.contact-menu {
+  @include sizing(100%, 40px);
+  @include flex(row, center, space-between);
+  background-color: $dark;
+  color: $light;
+  padding: 0px 100px;
+
+  .contact-box {
+    @include flex();
+    column-gap: 50px;
+
+    &-text {
+      @include flex();
+      column-gap: 5px;
+      opacity: 0.8;
+      cursor: pointer;
+      color: $light;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &-email {
+      p {
+        margin-bottom: 2px;
+      }
+    }
+
+    &-list {
+      @include flex(row, center, space-between);
+      list-style-type: none;
+
+      &-item {
+        @include sizing(40px, 40px);
+      }
+
+      &-link {
+        @include sizing(100%, 100%);
+        @include flex();
+
+        color: $light;
+        opacity: 0.8;
+        transition: all 0.4s;
+
+        &:hover {
+          opacity: 1;
+          background-color: $light-blue;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+// end of contact menu
