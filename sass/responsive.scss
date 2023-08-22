@@ -34,4 +34,16 @@
   .main-menu {
     display: none;
   }
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-menu-box {
+    width: 250px !important;
+  }
+  .mobile-under-menu-item {
+    width: 230px !important;
+  }
 }
