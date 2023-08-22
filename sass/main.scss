@@ -4,6 +4,7 @@
 .main {
   @include sizing(100%, auto);
   @include flex(column);
+  margin-bottom: 20px;
   // start of slider
   .slider-box {
     @include sizing(700px, 400px);
@@ -37,13 +38,16 @@
     @include sizing(100%, auto);
     margin-top: 30px;
     padding: 10px 30px;
-    @include flex(row, center, flex-start);
+    @include flex(row, flex-start, flex-start);
   }
 }
+// start of aside
 .aside {
   padding: 20px 0;
   padding-top: 0;
+  margin-top: 100px;
   @include flex(column, center, center);
+  row-gap: 100px;
   &-list {
     width: 200px;
     @include flex(column, flex-start, center);
@@ -68,4 +72,125 @@
     }
   }
 }
+// end of aside
+// start of article
+.article {
+  @include sizing(80%, auto);
+  margin: 35px 20px 20px 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  @include grid(1fr, repeat(3, 1fr));
+  row-gap: 10px;
+  padding: 10px;
+
+  &-section {
+    @include sizing(100%, auto);
+    @include flex(column, center, flex-start);
+    overflow-x: scroll;
+
+    .card-container {
+      width: auto;
+      height: max-content;
+      @include flex(row, center, flex-start);
+      column-gap: 20px;
+      overflow-x: auto;
+      padding: 10px;
+      scroll-behavior: smooth;
+    }
+
+    &-header {
+      width: 100%;
+      text-align: center;
+
+      &-title {
+        position: relative;
+        width: 100%;
+        font-size: 1.5rem;
+        color: $dark-light;
+
+        &::after,
+        &::before {
+          content: "";
+          @include sizing(35%, 5px);
+          background-color: $light-blue;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 50px;
+        }
+        &::after {
+          left: 0;
+        }
+        &::before {
+          right: 0;
+        }
+      }
+    }
+
+    &-body {
+      width: 100%;
+      @include flex(row, center, flex-start);
+      column-gap: 20px;
+      padding-top: 10px;
+
+      .card {
+        @include sizing(350px, 250px);
+        min-width: 350px;
+        @include flex(row, flex-start, flex-start);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+
+        &-img {
+          @include sizing(200px, 250px);
+
+          img {
+            display: block;
+            @include sizing(100%, 100%);
+          }
+        }
+
+        &-details {
+          width: 150px;
+          padding: 10px;
+          @include flex(column, center, flex-start);
+          row-gap: 20px;
+
+          .card-brand {
+            p {
+              font-weight: 900;
+            }
+          }
+          .card-model {
+            p {
+              font-weight: 700;
+            }
+          }
+          .card-detail {
+            p {
+              word-wrap: break-word;
+              font-size: 0.9rem;
+            }
+          }
+          .card-price {
+            p {
+              font-weight: 700;
+            }
+          }
+          .card-btn {
+            width: 130px;
+            outline: none;
+            padding: 10px;
+            border: 1px solid $light-blue;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: $light-blue;
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+}
+// end of article
 // end of main

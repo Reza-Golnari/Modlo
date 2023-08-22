@@ -32,3 +32,13 @@ document.body.onload = () => {
     maxScroll = 1700;
   }
 };
+
+let listRowCards = document.querySelectorAll(".card-container");
+
+listRowCards.forEach((row) => {
+  row.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    console.log(e.deltaY);
+    row.scrollLeft += e.deltaY * 2;
+  });
+});
