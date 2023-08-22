@@ -182,3 +182,6 @@ a {
   opacity: 0.9;
   cursor: pointer;
 }
+.main-menu .page-active {
+  opacity: 1 !important;
+}

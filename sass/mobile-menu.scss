@@ -179,8 +179,12 @@
       }
     }
   }
+  .page-active {
+    color: $light-blue !important;
+  }
   //   end of contact menu
 }
+
 @media screen and (max-width: 670px) {
   .mobile-menu {
     display: flex;

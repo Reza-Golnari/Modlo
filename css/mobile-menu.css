@@ -217,6 +217,9 @@ a {
 .mobile-menu .mobile-contact-box .mobile-contact-box-list-link {
   color: rgba(236, 240, 241, 0.7);
 }
+.mobile-menu .page-active {
+  color: #1890ff !important;
+}
 
 @media screen and (max-width: 670px) {
   .mobile-menu {

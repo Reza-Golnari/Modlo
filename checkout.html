@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/contact-menu.css" />
     <link rel="stylesheet" href="./css/main-menu.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" />
     <link rel="stylesheet" href="./icons/fontawesome/css/all.min.css" />
     <title>Modlo</title>
   </head>
@@ -83,8 +84,11 @@
                       Cart
                     </a>
                   </li>
-                  <li class="under-menu-item">
-                    <a href="./checkout.html" class="under-menu-link">
+                  <li class="under-menu-item page-active">
+                    <a
+                      href="./checkout.html"
+                      class="under-menu-link page-active"
+                    >
                       <i class="fas fa-money-bill"></i>
                       Checkout
                     </a>
@@ -122,11 +126,119 @@
           </div>
         </nav>
         <!-- end of main menu -->
+        <!-- start of mobile menu -->
+        <!-- start of mobile-menu -->
+        <nav class="mobile-menu">
+          <!-- start of logo -->
+          <div class="logo-box">
+            <a href="index.html" class="logo">
+              M<span class="blue-text">o</span>dl<span class="blue-text"
+                >o</span
+              >
+            </a>
+          </div>
+          <!-- end of logo -->
+          <!-- start of mobile menu icon -->
+          <div class="mobile-menu mobile-menu-icon">
+            <span class="mobile-menu-line"></span>
+            <span class="mobile-menu-line"></span>
+            <span class="mobile-menu-line"></span>
+          </div>
+          <!-- end of mobile menu icon -->
+          <!-- start of mobile-menu box -->
+          <section class="mobile-menu-box">
+            <!-- start of mobile menu box logo -->
+            <div class="logo-box">
+              <a href="index.html" class="logo">
+                M<span class="blue-text">o</span>dl<span class="blue-text"
+                  >o</span
+                >
+              </a>
+            </div>
+            <!-- end of mobile menu box logo -->
+            <!-- start of side box menu -->
+            <ul class="side-menu">
+              <li class="side-menu-item">
+                <a href="index.html" class="side-menu-link">Home </a>
+              </li>
+              <li class="side-menu-item" id="mobile-shop-item">
+                <a href="shop.html" class="side-menu-link"> Shop </a>
+                <div class="side-menu-btn">
+                  <span class="side-menu-icon">
+                    <i class="fas fa-caret-left"></i>
+                  </span>
+                </div>
+                <ul class="mobile-under-menu">
+                  <li class="mobile-under-menu-item side-menu-item">
+                    <a href="cart.html" class="side-menu-link">Cart</a>
+                  </li>
+                  <li class="mobile-under-menu-item side-menu-item">
+                    <a href="checkout.html" class="side-menu-link page-active"
+                      >Checkout</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="side-menu-item">
+                <a href="login.html" class="side-menu-link">Login </a>
+              </li>
+              <li class="side-menu-item">
+                <a href="blog.html" class="side-menu-link">Blog </a>
+              </li>
+            </ul>
+            <!-- end of side box menu -->
+            <!-- start of mobile contact box -->
+            <div class="mobile-contact-box">
+              <span class="mobile-contact contact-box-left">
+                <a href="#" class="mobile-contact-box-text contact-box-phone">
+                  <i class="fas fa-phone-alt"></i>
+                  <p class="mobile-contact-text mobile-contact-number">
+                    +23 323424897
+                  </p>
+                </a>
+                <a href="#" class="mobile-contact-box-text contact-box-email">
+                  <i class="fa fa-envelope"></i>
+                  <p class="mobile-contact-text mobile-contact-email">
+                    modlo@gmail.com
+                  </p>
+                </a>
+              </span>
+              <span class="mobile-contact contact-box-right">
+                <ul class="mobile-contact-box-list">
+                  <li class="mobile-contact-box-list-item">
+                    <a href="#" class="mobile-contact-box-list-link">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="mobile-contact-box-list-item">
+                    <a href="#" class="mobile-contact-box-list-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="mobile-contact-box-list-item">
+                    <a href="#" class="mobile-contact-box-list-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="mobile-contact-box-list-item">
+                    <a href="#" class="mobile-contact-box-list-link">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <!-- end of mobile contact box -->
+          </section>
+          <!-- end of mobile-menu box -->
+        </nav>
+        <!-- end of mobile-menu -->`
       </header>
       <!-- end of header -->
     </div>
     <!-- end of container -->
     <!-- scripts -->
     <script src="./icons/fontawesome/js/all.min.js"></script>
+    <script src="./js/shared.js"></script>
   </body>
 </html>
