@@ -57,6 +57,14 @@ a {
   .slider-img {
     width: 400px !important;
   }
+  .aside {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    column-gap: 50px;
+  }
 }
 @media screen and (max-width: 670px) {
   .contact-menu,

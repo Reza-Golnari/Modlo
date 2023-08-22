@@ -83,12 +83,6 @@ a {
   align-items: center;
   justify-content: center;
 }
-.aside-list-title {
-  padding: 10px;
-  margin-top: 20px;
-  opacity: 0.8;
-  font-weight: 900;
-}
 .aside-list {
   width: 200px;
   display: flex;
@@ -110,4 +104,11 @@ a {
   padding: 10px;
   color: #111417;
   font-weight: 700;
+}
+.aside-list-title {
+  padding: 10px;
+  margin-top: 20px;
+  opacity: 0.8;
+  font-weight: 900;
+  align-self: center;
 }
