@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/contact-menu.css" />
     <link rel="stylesheet" href="./css/main-menu.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/mobile-menu.css" />
     <link rel="stylesheet" href="./icons/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Modlo</title>
   </head>
   <body>
     <!-- start of container -->
-    <div class="container">
+    <div class="container" onload="loaded()">
       <!-- start of header -->
-      <header class="header">
+      <header class="header" id="header">
         <!-- start of contact menu -->
         <div class="contact-menu">
           <span class="contact-box contact-box-left">
@@ -232,10 +232,42 @@
         <!-- end of mobile-menu -->`
       </header>
       <!-- end of header -->
+      <!-- start of main -->
+      <main class="main">
+        <!-- start of slider -->
+        <section class="slider-box">
+          <div class="slider">
+            <div class="slider-item">
+              <img src="./images/shop (17).jpg" class="slider-img" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/shop (15).jpg" class="slider-img" />
+            </div>
+            <div class="slider-item active">
+              <img src="./images/shop (30).jpg" class="slider-img" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/shop (29).jpg" class="slider-img" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/shop (20).jpg" class="slider-img" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/shop (22).jpg" class="slider-img" />
+            </div>
+          </div>
+        </section>
+        <!-- end of slider -->
+      </main>
+      <!-- end of main -->
+      <!-- start of footer -->
+      <footer></footer>
+      <!-- end of footer -->
     </div>
     <!-- end of container -->
     <!-- scripts -->
     <script src="./icons/fontawesome/js/all.min.js"></script>
     <script src="./js/shared.js"></script>
+    <script src="./js/custom.js"></script>
   </body>
 </html>
