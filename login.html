@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/contact-menu.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main-menu.css" />
@@ -233,6 +233,30 @@
         <!-- end of mobile-menu -->`
       </header>
       <!-- end of header -->
+      <!-- start of main -->
+      <main class="main">
+        <form class="login-form">
+          <input type="text" placeholder="Name" class="input" required />
+          <input type="text" placeholder="Family" class="input" required />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input"
+            required
+          />
+          <input type="email" placeholder="Email" class="input" required />
+          <div class="checkbox-container">
+            <input type="checkbox" class="checkbox" />
+            <label for=".checkbox">Keep me logged in</label>
+          </div>
+          <input type="submit" value="Submit" class="form-btn" />
+        </form>
+        <p class="form-text">
+          Don't have an account?
+          <a href="singup.html" class="form-link">Create an account</a>
+        </p>
+      </main>
+      <!-- end of main -->
       <!-- start of footer -->
       <footer class="footer">
         <div class="footer-box about-us">

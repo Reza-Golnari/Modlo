@@ -132,6 +132,17 @@
   .page-not-found-box {
     transform: scale(0.7);
   }
+
+  .login-form {
+    @include grid(1fr !important, auto !important);
+
+    .form-btn {
+      padding: 10px;
+    }
+  }
+  .form-text {
+    font-size: 0.8rem !important;
+  }
 }
 
 @media screen and (max-width: 430px) {

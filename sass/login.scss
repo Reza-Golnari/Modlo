@@ -1,0 +1,47 @@
+@import "basic";
+
+.main {
+  @include sizing(100%, auto);
+  margin: 50px 0;
+  @include flex(column);
+  row-gap: 20px;
+
+  .login-form {
+    @include grid(repeat(2, 1fr), repeat(3, 1fr));
+    gap: 20px;
+
+    .input {
+      outline: none;
+      padding: 10px;
+      background-color: $white;
+      border: none;
+      box-shadow: 0 0 5px rgba($very-dark, 0.5);
+      border-radius: 10px;
+    }
+
+    .checkbox-container {
+      @include flex();
+      column-gap: 5px;
+
+      label {
+        margin-bottom: -1px;
+      }
+    }
+
+    .form-btn {
+      outline: none;
+      border: 2px solid $light-blue;
+      border-radius: 10px;
+      color: $light-blue;
+      font-weight: 700;
+      box-shadow: 0 0 5px rgba($light-blue, 0.7);
+      cursor: pointer;
+    }
+  }
+
+  .form-link {
+    color: $light-blue;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}

@@ -135,6 +135,17 @@ a {
   .page-not-found-box {
     transform: scale(0.7);
   }
+  .login-form {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+  .login-form .form-btn {
+    padding: 10px;
+  }
+  .form-text {
+    font-size: 0.8rem !important;
+  }
 }
 @media screen and (max-width: 430px) {
   .slider-box,
