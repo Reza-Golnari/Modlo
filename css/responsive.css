@@ -237,6 +237,11 @@ a {
     column-gap: 10px;
     padding: 10px;
   }
+  .checkout-form {
+    height: max-content !important;
+    grid-template-columns: 1fr !important;
+    row-gap: 10px !important;
+  }
 }
 @media screen and (max-width: 670px) {
   .contact-menu,
@@ -267,6 +272,24 @@ a {
   .blog-article-body-title {
     font-size: 1.5rem !important;
   }
+  .checkout-article {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    justify-content: center !important;
+    row-gap: 20px;
+  }
+  .checkout-article .receipt {
+    width: 500px !important;
+    padding: 20px !important;
+  }
+  .checkout-article .checkout-form {
+    margin-left: 10px;
+    width: 500px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .filter-list-link {
@@ -286,6 +309,28 @@ a {
   .article-card {
     width: 350px !important;
     height: 500px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .checkout-article {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    justify-content: center !important;
+    row-gap: 20px;
+  }
+  .checkout-article .receipt {
+    height: max-content !important;
+    width: 300px !important;
+    padding: 20px !important;
+  }
+  .checkout-article .checkout-form {
+    height: max-content !important;
+    margin-left: 10px;
+    width: 300px !important;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: auto;
   }
 }
 @media screen and (max-width: 510px) {

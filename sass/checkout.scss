@@ -1,0 +1,72 @@
+@import "basic";
+
+.checkout-main {
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+
+  .checkout-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .checkout-article {
+    @include flex(row, flex-start, center);
+    column-gap: 10px;
+
+    .receipt {
+      width: 300px;
+      min-width: 300px;
+      height: 400px;
+      padding: 20px 5px;
+      border: 2px solid $light-blue;
+      border-radius: 10px;
+
+      &-title {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      &-text {
+        margin: 30px 0;
+      }
+
+      &-btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+        outline: none;
+        border: none;
+        color: $light;
+        background-color: $light-blue;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+    .checkout-form {
+      width: 60%;
+      height: 400px;
+      margin-right: 10px;
+      padding: 20px;
+      @include grid(repeat(2, 1fr), auto);
+      gap: 10px;
+      row-gap: 40px;
+      box-shadow: 0 0 5px rgba($very-dark, 0.4);
+      border-radius: 10px;
+
+      .checkout-input {
+        width: 100%;
+        padding: 15px 10px;
+        outline: none;
+        border: none;
+        background-color: $light;
+        box-shadow: 0 2px 5px rgba($very-dark, 0.4);
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
