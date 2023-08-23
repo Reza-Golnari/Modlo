@@ -146,6 +146,14 @@ a {
   .form-text {
     font-size: 0.8rem !important;
   }
+  .sign-up-form {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+  .sign-up-form .form-btn {
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 430px) {
   .slider-box,

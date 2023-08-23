@@ -143,6 +143,14 @@
   .form-text {
     font-size: 0.8rem !important;
   }
+
+  .sign-up-form {
+    @include grid(1fr !important, auto !important);
+
+    .form-btn {
+      padding: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 430px) {
