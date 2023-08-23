@@ -322,7 +322,7 @@ a {
   .checkout-article .receipt {
     height: max-content !important;
     width: 300px !important;
-    padding: 20px !important;
+    padding: 20px 10px !important;
   }
   .checkout-article .checkout-form {
     height: max-content !important;
