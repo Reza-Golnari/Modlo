@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: #ecf0f1;
+  min-height: 100vh;
+}
+
+.blue-text {
+  color: #1890ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-not-found-box {
+  width: 500px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(17, 20, 23, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  row-gap: 50px;
+  transform: scale(0.9);
+}
+.page-not-found-box .svg-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.page-not-found-box .svg-box img {
+  width: 70%;
+  height: auto;
+}
+.page-not-found-box .content-box {
+  padding: 0 20px;
+}
+.page-not-found-box .content-box .page-title {
+  color: #ff4e4f;
+  text-align: center;
+}
+.page-not-found-box .content-box .page-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.page-not-found-box .content-box .page-text a {
+  color: #ff4e4f;
+}

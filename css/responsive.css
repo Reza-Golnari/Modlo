@@ -132,6 +132,9 @@ a {
   .footer-box-title {
     font-size: 1.2rem;
   }
+  .page-not-found-box {
+    transform: scale(0.7);
+  }
 }
 @media screen and (max-width: 430px) {
   .slider-box,

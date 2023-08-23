@@ -1,0 +1,39 @@
+@import "basic";
+
+.container {
+  @include flex();
+}
+
+.page-not-found-box {
+  @include sizing(500px, 80vh);
+  @include flex(column, center, center);
+  box-shadow: 0 0 10px rgba($very-dark, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  row-gap: 50px;
+  transform: scale(0.9);
+  .svg-box {
+    @include flex();
+    img {
+      @include sizing(70%, auto);
+    }
+  }
+
+  .content-box {
+    padding: 0 20px;
+
+    .page-title {
+      color: $light-red;
+      text-align: center;
+    }
+
+    .page-text {
+      font-weight: 700;
+      font-size: 1.2rem;
+
+      a {
+        color: $light-red;
+      }
+    }
+  }
+}
