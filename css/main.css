@@ -37,7 +37,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .main .slider-box {
   width: 700px;
@@ -53,6 +53,7 @@ a {
   display: flex;
   scroll-behavior: smooth;
   overflow-y: hidden;
+  pointer-events: none;
 }
 .main .slider-item {
   width: 700px;

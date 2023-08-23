@@ -1,0 +1,67 @@
+@import "basic";
+
+// start of footer
+.footer {
+  @include sizing(100%, 400px);
+  background-color: $dark-light;
+  @include grid(repeat(3, 1fr), 100%);
+  padding: 20px;
+  padding-top: 30px;
+  column-gap: 20px;
+  overflow: hidden;
+
+  &-box {
+    @include flex(column, center, flex-start);
+    row-gap: 20px;
+    color: $light;
+    &-title {
+      font-size: 1.8rem;
+    }
+    &-text {
+      font-size: 1.2rem;
+      line-height: 25px;
+    }
+  }
+
+  .contact-us-list {
+    @include grid(repeat(2, 1fr), repeat(2, 1fr));
+    list-style-type: none;
+    gap: 20px;
+
+    &-item {
+      @include sizing(50px, 50px);
+      @include flex();
+    }
+
+    &-link {
+      padding: 15px;
+      background-color: $light-blue;
+      color: $very-dark;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      @include flex();
+      filter: drop-shadow(0 0 10px rgba($light-blue, 0.4));
+    }
+  }
+
+  .quick-access {
+    &-list {
+      &-item {
+        list-style-type: none;
+        padding: 5px;
+        margin: 10px 0;
+        @include flex();
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      &-link {
+        color: $light;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// end of footer

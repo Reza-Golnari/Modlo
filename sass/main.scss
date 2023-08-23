@@ -4,7 +4,7 @@
 .main {
   @include sizing(100%, auto);
   @include flex(column);
-  margin-bottom: 20px;
+  margin: 20px 0;
   // start of slider
   .slider-box {
     @include sizing(700px, 400px);
@@ -19,6 +19,7 @@
     display: flex;
     scroll-behavior: smooth;
     overflow-y: hidden;
+    pointer-events: none;
 
     &-item {
       @include sizing(700px, 100%);
