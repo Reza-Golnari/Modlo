@@ -1,5 +1,24 @@
 @import "basic";
 
+@media screen and (max-width: 1160px) {
+  .article {
+    @include grid(repeat(3, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(300px !important, 450px !important);
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  .article {
+    @include grid(repeat(3, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(250px !important, 420px !important);
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
   .contact-menu {
     padding: 0 20px;
@@ -47,6 +66,14 @@
       padding: 10px;
     }
   }
+
+  .article {
+    @include grid(repeat(2, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(350px !important, 500px !important);
+    }
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -60,6 +87,14 @@
     width: 150px;
     padding: 5px !important;
     font-size: 0.8rem !important;
+  }
+
+  .article {
+    @include grid(repeat(2, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(300px !important, 450px !important);
+    }
   }
 }
 
@@ -111,6 +146,14 @@
   .mobile-menu {
     display: flex;
   }
+
+  .article {
+    @include grid(repeat(1, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(450px !important, 500px !important);
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -122,6 +165,14 @@
   }
   .blog-search {
     display: none;
+  }
+
+  .article {
+    @include grid(repeat(1, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(350px !important, 500px !important);
+    }
   }
 }
 
@@ -207,6 +258,14 @@
     &::after,
     &::before {
       width: 25%;
+    }
+  }
+
+  .article {
+    @include grid(repeat(1, 1fr) !important, auto);
+
+    &-card {
+      @include sizing(300px !important, 450px !important);
     }
   }
 }

@@ -30,6 +30,28 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1160px) {
+  .article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 300px !important;
+    height: 450px !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 250px !important;
+    height: 420px !important;
+  }
+}
 @media screen and (max-width: 900px) {
   .contact-menu {
     padding: 0 20px;
@@ -63,6 +85,15 @@ a {
     font-size: 1.4rem;
     padding: 10px;
   }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 350px !important;
+    height: 500px !important;
+  }
 }
 @media screen and (max-width: 780px) {
   .filter-list {
@@ -75,6 +106,15 @@ a {
     width: 150px;
     padding: 5px !important;
     font-size: 0.8rem !important;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 300px !important;
+    height: 450px !important;
   }
 }
 @media screen and (max-width: 760px) {
@@ -122,6 +162,15 @@ a {
   .mobile-menu {
     display: flex;
   }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 450px !important;
+    height: 500px !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .filter-list-link {
@@ -132,6 +181,15 @@ a {
   }
   .blog-search {
     display: none;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 350px !important;
+    height: 500px !important;
   }
 }
 @media screen and (max-width: 510px) {
@@ -202,5 +260,14 @@ a {
   }
   .article-section-header-title::after, .article-section-header-title::before {
     width: 25%;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: auto;
+  }
+  .article-card {
+    width: 300px !important;
+    height: 450px !important;
   }
 }

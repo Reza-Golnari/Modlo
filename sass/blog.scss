@@ -4,8 +4,8 @@
   @include sizing(100%, auto);
   margin: 20px 0;
   padding: 20px;
-  @include flex();
-
+  @include flex(column);
+  // start of filter box
   .filter-box {
     width: 100%;
     .filter-list {
@@ -50,4 +50,86 @@
       }
     }
   }
+  // end of filter box
+  //   start of article
+  .article {
+    width: 100%;
+    margin-top: 20px;
+    @include grid(repeat(3, 1fr), auto);
+    row-gap: 30px;
+
+    .article-card {
+      margin: 0 auto;
+      @include sizing(350px, 500px);
+      overflow: hidden;
+      border-radius: 10px;
+      @include flex(column, center, flex-start);
+      row-gap: 10px;
+      box-shadow: 0 0 5px rgba($very-dark, 0.4);
+
+      &-header {
+        @include sizing(100%, 300px);
+        @include flex();
+
+        img {
+          @include sizing(100%, 100%);
+        }
+      }
+
+      &-body {
+        @include sizing(100%, auto);
+        @include flex(column);
+        row-gap: 10px;
+        padding: 0 10px;
+
+        .article-card-title {
+          text-align: center;
+        }
+
+        .article-card-btn {
+          outline: none;
+          padding: 10px 20px;
+          border-radius: 10px;
+          border: 2px solid $light-blue;
+          color: $light-blue;
+          font-weight: 700;
+          box-shadow: 0 2px 5px rgba($very-dark, 0.4);
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      }
+
+      &-footer {
+        @include sizing(100%, 20px);
+        margin: 10px 0;
+        margin-top: 20px;
+        @include flex(row, center, space-between);
+        padding: 10px 20px;
+
+        &-box {
+          @include flex();
+          column-gap: 5px;
+          color: $dark-light;
+          font-weight: 700;
+          cursor: default;
+        }
+
+        .article-card-footer-box:nth-child(2) {
+          color: $light-red;
+
+          p {
+            font-weight: 700;
+          }
+        }
+        .article-card-footer-box:last-child {
+          color: $light-blue;
+
+          p {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  //   end of article
 }
