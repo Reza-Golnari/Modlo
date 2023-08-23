@@ -7,6 +7,7 @@
   padding: 10px;
   border: 1px solid rgba($dark, 0.5);
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba($dark, 0.5);
 
   .product-container {
     .product-list {
@@ -98,6 +99,32 @@
           }
         }
       }
+    }
+  }
+}
+.card-article {
+  width: 100%;
+  @include flex();
+  &-info {
+    margin: 0 auto;
+    @include sizing(100%, 60px);
+    @include flex(row, center, space-between);
+    column-gap: 50px;
+    background-color: $dark-light;
+    margin: 20px 0;
+    padding: 20px;
+    color: $light;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px rgba($very-dark, 0.7);
+
+    .card-article-product {
+      color: $very-dark;
+      margin-right: 20px;
+      padding: 10px;
+      border: 1px solid $light;
+      background-color: $light;
+      border-radius: 10px;
     }
   }
 }
