@@ -326,6 +326,7 @@ a {
   }
   .checkout-article .checkout-form {
     height: max-content !important;
+    row-gap: 20px !important;
     margin-left: 10px;
     width: 300px !important;
     display: grid;

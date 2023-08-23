@@ -309,6 +309,7 @@
 
     .checkout-form {
       height: max-content !important;
+      row-gap: 20px !important;
       margin-left: 10px;
       width: 300px !important;
       @include grid(repeat(1, 1fr) !important, auto);
