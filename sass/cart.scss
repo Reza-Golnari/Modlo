@@ -1,0 +1,103 @@
+@import "basic";
+
+.card-main {
+  @include sizing(1100px, auto);
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid rgba($dark, 0.5);
+  border-radius: 10px;
+
+  .product-container {
+    .product-list {
+      @include flex(column, flex-start, flex-start);
+      row-gap: 10px;
+
+      &-item {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba($very-dark, 0.7);
+        // @include flex(row, center, flex-start);
+        @include grid(repeat(10, 100px), auto);
+        column-gap: 20px;
+
+        .product-img-box {
+          @include sizing(150px, 180px);
+          grid-column: 1/3;
+          overflow: hidden;
+          border-radius: 10px;
+          @include flex();
+          box-shadow: 0 2px 10px rgba($very-dark, 0.7);
+
+          img {
+            @include sizing(100%, 100%);
+          }
+        }
+
+        .product-info {
+          @include flex(column, center, center);
+          row-gap: 30px;
+          text-align: center;
+          grid-column: 3/4;
+        }
+
+        .product-price {
+          grid-column: 4/6;
+          @include flex();
+        }
+
+        .product-number {
+          @include flex();
+          column-gap: 5px;
+
+          &-btn {
+            all: unset;
+            padding: 5px;
+            cursor: pointer;
+            border: 1px solid $light-blue;
+            color: $light-red;
+            @include flex();
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba($dark, 0.5);
+
+            &:first-child {
+              color: $light-blue;
+            }
+          }
+
+          &-text {
+            width: 20px;
+            height: 25px;
+            padding: 13px;
+            border-radius: 5px;
+            display: block;
+            border: 1px solid $light-blue;
+            @include flex();
+            box-shadow: 0 0 5px rgba($dark, 0.5);
+          }
+        }
+
+        .product-total {
+          @include flex();
+          grid-column: 7/9;
+
+          &-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+          }
+        }
+
+        .product-delete {
+          @include flex();
+
+          button {
+            all: unset;
+            font-size: 2rem;
+            color: $light-red;
+            filter: drop-shadow(0 0 10px rgba($light-red, 0.7));
+          }
+        }
+      }
+    }
+  }
+}
