@@ -49,6 +49,20 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .filter-list {
+    padding: 5px !important;
+  }
+  .filter-list-link {
+    padding: 5px 10px !important;
+  }
+  .blog-search {
+    width: 150px;
+    padding: 5px !important;
+    font-size: 0.8rem !important;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .slider-box,
   .slider-item,
@@ -96,6 +110,18 @@
   }
   .mobile-menu {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filter-list-link {
+    font-size: 0.7rem !important;
+  }
+  .filter-list-item {
+    margin: 0 !important;
+  }
+  .blog-search {
+    display: none;
   }
 }
 
