@@ -185,4 +185,6 @@ a {
 .big-title {
   text-align: center;
   font-size: 3rem;
+  margin: 20px 0;
+  margin-top: 40px;
 }

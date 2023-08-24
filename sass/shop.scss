@@ -1,0 +1,70 @@
+@import "basic";
+
+.shop-main {
+  @include sizing(100%, auto);
+  overflow: hidden;
+  margin: 20px 0;
+  &-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .shop-row {
+    position: relative;
+    width: 100%;
+    padding: 20px 30px;
+    @include flex(column, flex-start, center);
+    row-gap: 20px;
+
+    &-title {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $light-blue;
+      }
+    }
+
+    .row-btn {
+      position: absolute;
+      top: 52%;
+      @include flex();
+      outline: none;
+      border: none;
+      border-radius: 50%;
+      font-size: 2rem;
+      color: $light-blue;
+      background-color: transparent;
+      cursor: pointer;
+
+      &.btn-right {
+        right: 20px;
+      }
+      &.btn-left {
+        left: 20px;
+      }
+
+      i {
+        pointer-events: none;
+      }
+    }
+
+    &-products {
+      margin: 0 auto;
+      width: 92%;
+      padding: 5px;
+      overflow: auto;
+      @include flex(row, center, flex-start);
+      column-gap: 20px;
+      scroll-behavior: smooth;
+    }
+  }
+}

@@ -132,64 +132,6 @@
       @include flex(row, center, flex-start);
       column-gap: 20px;
       padding-top: 10px;
-
-      .card {
-        @include sizing(350px, 250px);
-        min-width: 350px;
-        @include flex(row, flex-start, flex-start);
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
-
-        &-img {
-          @include sizing(200px, 250px);
-
-          img {
-            display: block;
-            @include sizing(100%, 100%);
-          }
-        }
-
-        &-details {
-          width: 150px;
-          padding: 10px;
-          @include flex(column, center, flex-start);
-          row-gap: 20px;
-
-          .card-brand {
-            p {
-              font-weight: 900;
-            }
-          }
-          .card-model {
-            p {
-              font-weight: 700;
-            }
-          }
-          .card-detail {
-            p {
-              word-wrap: break-word;
-              font-size: 0.9rem;
-            }
-          }
-          .card-price {
-            p {
-              font-weight: 700;
-            }
-          }
-          .card-btn {
-            width: 130px;
-            outline: none;
-            padding: 10px;
-            border: 1px solid $light-blue;
-            border-radius: 10px;
-            font-weight: 700;
-            cursor: pointer;
-            background-color: $light-blue;
-            color: $light;
-          }
-        }
-      }
     }
   }
 }

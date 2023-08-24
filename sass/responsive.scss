@@ -134,6 +134,13 @@
     height: 250px !important;
   }
 
+  .btn-right {
+    right: 10px !important;
+  }
+  .btn-left {
+    left: 10px !important;
+  }
+
   .aside {
     margin: 0 auto;
     @include flex(
@@ -339,6 +346,15 @@
         padding: 5px !important;
       }
     }
+  }
+
+  .row-btn {
+    font-size: 1.4rem !important;
+    top: 55% !important;
+  }
+
+  .shop-row-products {
+    column-gap: 10px !important;
   }
 
   .footer {
